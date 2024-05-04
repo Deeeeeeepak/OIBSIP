@@ -1,0 +1,76 @@
+body{
+font-family: Arial, sans-serif;
+background-color: #222831; 
+color: #EEEEEE; 
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-color: #31363F;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+.header {
+background-color: #76ABAE; 
+color: #222831; 
+padding: 10px;
+text-align: center;
+border-radius: 10px 10px 0 0;
+}
+.header h1 {
+margin: 0;
+font-size: 36px;
+font-weight: bold;
+}
+.info {
+display: flex;
+align-items: center;
+padding: 20px;
+}
+.info img {
+width: 200px; 
+height: 200px;
+border-radius: 50%;
+margin-right: 20px;
+border: 5px solid #EEEEEE; 
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+.info .text {
+flex: 1;
+}
+.info .name {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+.info .dates {
+font-size: 14px;
+margin-bottom: 20px;
+}
+.info .quote {
+font-style: italic;
+font-size: 16px;
+margin-bottom: 20px;
+}
+.bio p {
+font-size: 16px;
+line-height: 1.6;
+}
+.references {
+padding: 20px;
+background-color: #76ABAE; 
+border-radius: 0 0 10px 10px;
+}
+.references h2 {
+margin-top: 0;
+}
+.references ul {
+list-style: none;
+padding: 0;
+}
+.references ul li {
+margin-bottom: 10px;
+}
