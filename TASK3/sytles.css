@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(205, 232, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgb(238, 247, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  width: calc(50% - 5px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.add-task {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(122, 178, 178);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.add-task:hover {
+  background-color: rgb(77, 134, 156);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  background-color: rgb(238, 247, 255);
+  transition: background-color 0.3s ease;
+}
+
+.task-list li:hover {
+  background-color: rgb(205, 232, 229);
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+.task-list li span {
+  flex: 1;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #009688;
+}
+
+.task-list li.pending {
+  color: #FF5733;
+}
+
+.task-list li button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.task-list li button:hover {
+  background-color: #ccc;
+}
+
+.navbar {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.navbar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.navbar button.active {
+  color: #fff;
+}
+
+#show-incomplete.active {
+  background-color: #FF5733;
+}
+
+#show-complete.active {
+  background-color: #009688;
+}
