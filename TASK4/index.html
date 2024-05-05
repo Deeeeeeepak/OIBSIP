@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-brand">AccessShield</a>
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div> 
+      
+
+<div class="container" id="loginContainer">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username or Email">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+    <div class="forgot-password-link"><a href="#" onclick="showForgotPassword()">Forgot Password?</a></div>
+    <div class="error-message" id="errorMessage"></div>
+    <div class="register-link">Don't have an account? <a href="#" onclick="showRegistration()">Register here</a></div>
+</div>
+
+<div class="container" id="registrationContainer" style="display: none;">
+    <h2>Register</h2>
+    <form id="registrationForm">
+        <input type="text" id="fullname" placeholder="Full Name">
+        <input type="text" id="email" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+        <button type="submit">Register</button>
+    </form>
+    <div class="error-message" id="registrationErrorMessage"></div>
+    <div class="login-link">Already registered? <a href="#" onclick="showLogin()">Login here</a></div>
+</div>
+
+<div class="container" id="forgotPasswordContainer" style="display: none;">
+    <h2>Forgot Password</h2>
+    <form id="forgotPasswordForm">
+        <input type="text" id="forgotPasswordEmail" placeholder="Enter your email">
+        <button type="submit">Reset Password</button>
+    </form>
+    <div class="error-message" id="forgotPasswordMessage"></div>
+</div>
+<script src="script.js"></script>
+<style>
+    #registrationErrorMessage {
+        color: green;
+    }
+</style>
+</body>
+</html>
