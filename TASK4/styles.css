@@ -1,0 +1,101 @@
+:root {
+    --background-color: #ffefbc; 
+    --primary-color: #FFBB70;
+    --secondary-color: #FFEC9E; 
+    --accent-color: #ED9455; 
+    --navbar-hover-color: #FFD188; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); 
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    background-color: var(--secondary-color); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color); 
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fcf0cb; 
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color); 
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+.error-message {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.forgot-password-link {
+    text-align: left;
+}
+
+.register-link,
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: var(--primary-color); 
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: var(--navbar-hover-color); 
+}
