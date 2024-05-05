@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFBDA; /* Use the primary color for the background */
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 50px;
+    font-weight: bold; /* Make the text bold */
+}
+
+#logoutButton {
+    background-color: #FFBB70; /* Use a shade of orange for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#logoutButton:hover {
+    background-color: #ED9455; /* Use a slightly lighter shade of orange on hover */
+}
+</style>
+</head>
+<body>
+    <h2>Welcome, <span id="userName"></span>!</h2> 
+        <button id="logoutButton">Logout</button> <!-- Add a logout button -->
+
+        <script>
+            // Get user's name from sessionStorage
+            var userName = sessionStorage.getItem('userName');
+            document.getElementById('userName').textContent = userName;
+    
+            // Add event listener to the logout button
+            document.getElementById('logoutButton').addEventListener('click', function() {
+                sessionStorage.removeItem('userName'); // Remove user's name from sessionStorage
+                window.location.href = 'index.html'; // Redirect to the login page
+            });
+        </script>
+</body>
+</html>
